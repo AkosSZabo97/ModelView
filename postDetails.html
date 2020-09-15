@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+
+    <script src="scripts/posts.model.js"></script>
+    <script src="scripts/comments.model.js"></script>
+    <script src="scripts/users.model.js"></script>
+    <script src="scripts/postDetails.js" defer></script>
+</head>
+<body>
+    <h1 data-post="tile"></h1>
+    <h2 data-post="author"></h2>
+    <div data-post="body"></div>
+    <div data-post="comments"></div>
+    <form data-comment-form>
+        <p>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </p>
+        <p><button type="submit">Add a Comment</button></p>
+    </form>
+</body>
+</html>
